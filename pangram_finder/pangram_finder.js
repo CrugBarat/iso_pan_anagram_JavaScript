@@ -1,5 +1,5 @@
 const PangramFinder = function (phrase) {
-  this.phrase = phrase.toLowerCase().split('');
+  this.phrase = phrase.toLowerCase();
   this.alphabet = 'qwertyuiopasdfghjklzxcvbnm'.split('');
 }
 
