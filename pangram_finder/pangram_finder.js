@@ -4,12 +4,7 @@ const PangramFinder = function (phrase) {
 }
 
 PangramFinder.prototype.isPangram = function () {
-  for (letter of this.alphabet) {
-    if (this.phrase.includes(letter) === false) {
-      return false;
-    }
-  }
-  return true;
+  return this.alphabet.every(letter => this.phrase.includes(letter));
 }
 
 module.exports = PangramFinder;
